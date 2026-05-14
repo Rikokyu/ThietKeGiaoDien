@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBRY - Thanh Toán Đơn Hàng</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="header-container">
+            <div class="logo">BBRY</div>
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">Services</a>
+                <a href="#">Products</a>
+                <a href="#">Contact</a>
+            </nav>
+            <div class="header-icons">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <i class="fa-solid fa-circle-user"></i>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <header class="page-header">
+            <h1>Thanh toán</h1>
+            <p>Hoàn tất đơn hàng của bạn để thưởng thức những ổ bánh nghệ nhân tuyệt vời nhất.</p>
+        </header>
+
+        <div class="checkout-grid">
+            <section class="checkout-left">
+
+                <div class="card-section">
+                    <h3><i class="fa-solid fa-truck-fast"></i> Thông tin giao hàng</h3>
+                    <div class="form-group">
+                        <label>Họ và tên</label>
+                        <input type="text" placeholder="Nhập họ tên đầy đủ">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Số điện thoại</label>
+                            <input type="text" placeholder="0xxx xxx xxx">
+                        </div>
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="email" placeholder="example@email.com">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Địa chỉ giao hàng</label>
+                        <textarea placeholder="Số nhà, tên đường, phường/xã, quận/huyện..."></textarea>
+                    </div>
+                </div>
+
+                <div class="card-section">
+                    <h3><i class="fa-solid fa-box-open"></i> Phương thức vận chuyển</h3>
+                    <label class="option-item selected">
+                        <input type="radio" name="shipping" checked>
+                        <div class="option-text">
+                            <strong>Giao hàng tiêu chuẩn</strong>
+                            <small>2 - 3 ngày làm việc</small>
+                        </div>
+                        <span class="option-price">30.000đ</span>
+                    </label>
+                    <label class="option-item">
+                        <input type="radio" name="shipping">
+                        <div class="option-text">
+                            <strong>Giao hàng hỏa tốc</strong>
+                            <small>Trong vòng 2 giờ</small>
+                        </div>
+                        <span class="option-price">55.000đ</span>
+                    </label>
+                </div>
+
+                <div class="card-section">
+                    <h3><i class="fa-solid fa-credit-card"></i> Phương thức thanh toán</h3>
+                    <div class="payment-grid">
+                        <label class="payment-card">
+                            <input type="radio" name="payment">
+                            <i class="fa-solid fa-credit-card"></i>
+                            <span>Thẻ tín dụng</span>
+                        </label>
+                        <label class="payment-card">
+                            <input type="radio" name="payment">
+                            <i class="fa-solid fa-building-columns"></i>
+                            <span>Chuyển khoản</span>
+                        </label>
+                        <label class="payment-card selected">
+                            <input type="radio" name="payment" checked>
+                            <i class="fa-solid fa-hand-holding-dollar"></i>
+                            <span>Tiền mặt (COD)</span>
+                        </label>
+                    </div>
+                </div>
+            </section>
+
+            <aside class="checkout-right">
+                <div class="summary-box">
+                    <h2>Tóm tắt đơn hàng</h2>
+
+                    <div class="order-items">
+                        <div class="item">
+                            <div class="item-img" style="background-image: url('https://via.placeholder.com/50');">
+                            </div>
+                            <div class="item-info">
+                                <strong>Bánh Mì Sourdough Truyền Thống</strong>
+                                <span>Số lượng: 1</span>
+                            </div>
+                            <span class="item-price">85.000đ</span>
+                        </div>
+                        <div class="item">
+                            <div class="item-img" style="background-image: url('https://via.placeholder.com/50');">
+                            </div>
+                            <div class="item-info">
+                                <strong>Bánh Sừng Bò Bơ Pháp</strong>
+                                <span>Số lượng: 2</span>
+                            </div>
+                            <span class="item-price">90.000đ</span>
+                        </div>
+                    </div>
+
+                    <div class="price-breakdown">
+                        <div class="price-line"><span>Tạm tính</span><span>175.000đ</span></div>
+                        <div class="price-line"><span>Phí vận chuyển</span><span>30.000đ</span></div>
+                        <div class="price-line discount"><span>Khuyến mãi</span><span>-15.000đ</span></div>
+                    </div>
+
+                    <div class="grand-total">
+                        <span>Tổng cộng</span>
+                        <span class="final-price">190.000đ</span>
+                    </div>
+
+                    <button class="btn-checkout">Đặt hàng ngay</button>
+                    <p class="disclaimer">Bằng cách đặt hàng, bạn đồng ý với <a href="#">Điều khoản dịch vụ</a> của
+                        chúng tôi.</p>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>Office Address</h4>
+                <p>132 Bui chuoi goc tre<br>+012 345 67 chu nhat nghi<br>bonanhemsiunhan@gmail.com</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li>> About Us</li>
+                    <li>> Contact Us</li>
+                    <li>> Our Services</li>
+                    <li>> Terms & Condition</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Products</h4>
+                <ul>
+                    <li>> Design</li>
+                    <li>> Order</li>
+                    <li>> Pay</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Photo Gallery</h4>
+                <div class="gallery">
+                    <div class="pic">Picture</div>
+                    <div class="pic">Picture</div>
+                    <div class="pic">Picture</div>
+                    <div class="pic">Picture</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
