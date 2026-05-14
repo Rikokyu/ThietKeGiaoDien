@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thiết kế bánh - BBRY</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- TOP BAR -->
+    <div class="topbar">
+        <div class="topbar-left">
+            <span>Home / Carrer / Terms / Privacy</span>
+        </div>
+        <div class="topbar-right">
+            <span>Follow us:</span>
+            <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+            <a href="#" class="social-icon"><i class="fas fa-envelope"></i></a>
+        </div>
+    </div>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">BBRY</div>
+            <nav class="nav">
+                <a href="index.html">Home</a>
+                <a href="#services">Services</a>
+                <a href="products.html">Products</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <div class="call-button">
+                <div class="phone-icon">
+                    <i class="fas fa-phone"></i>
+                </div>
+                <div class="call-info">
+                    <span class="call-text">Call us</span>
+                    <span class="phone-number">+01234567 chu nhat nghi</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+        <!-- Floating social icons -->
+        <div class="floating-social">
+            <a href="#" class="float-icon messenger"><i class="fab fa-facebook-messenger"></i></a>
+            <a href="#" class="float-icon zalo"><i class="fas fa-comment"></i></a>
+            <a href="#" class="float-icon whatsapp"><i class="fab fa-whatsapp"></i></a>
+            <a href="#" class="float-icon top"><i class="fas fa-chevron-up"></i></a>
+        </div>
+
+        <!-- CUSTOM CAKE FORM -->
+        <div class="custom-cake-container">
+            <div class="container">
+                <h1 class="form-title">Thiết kế bánh sinh nhật theo yêu cầu</h1>
+
+                <form class="cake-form">
+                    <!-- Image Section -->
+                    <div class="form-section">
+                        <div class="section-label">Gửi ảnh</div>
+                        <div class="image-upload-box">
+                            <div class="upload-area">
+                                <i class="fas fa-camera"></i>
+                                <p>Kéo thả hoặc nhấp để tải sinh khi</p>
+                            </div>
+                            <input type="file" class="file-input" accept="image/*">
+                        </div>
+                        <button type="button" class="upload-btn">Tải ảnh lên</button>
+                    </div>
+
+                    <!-- Description Section -->
+                    <div class="form-section">
+                        <div class="section-label">Mô tả</div>
+                        <div class="description-content">
+                            <div class="description-left">
+                                <h3>Viết mô tả</h3>
+                                <textarea class="description-input" placeholder="Nhập mô tả chi tiết về bánh bạn muốn..." rows="8"></textarea>
+                            </div>
+
+                            <div class="description-right">
+                                <h3>Chọn size</h3>
+                                <select class="size-select">
+                                    <option value="15">15cm</option>
+                                    <option value="20">20cm</option>
+                                    <option value="25">25cm</option>
+                                    <option value="30">30cm</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div class="form-submit">
+                        <button type="submit" class="submit-btn">Gửi yêu cầu</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Office Address Section -->
+                <div class="footer-section">
+                    <h3>Office Address</h3>
+                    <p>132 Bui chuoi goc tre</p>
+                    <p>+012 345 67 chu nhat nghi</p>
+                    <p>bonanhemsiuphan@gmail.com</p>
+                </div>
+
+                <!-- Quick Links Section -->
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">> About Us</a></li>
+                        <li><a href="#">> Contact Us</a></li>
+                        <li><a href="#">> Our Services</a></li>
+                        <li><a href="#">> Terms & Condition</a></li>
+                        <li><a href="#">> Support</a></li>
+                    </ul>
+                </div>
+
+                <!-- Products Section -->
+                <div class="footer-section">
+                    <h3>Products</h3>
+                    <ul>
+                        <li><a href="#">> Design</a></li>
+                        <li><a href="#">> Order</a></li>
+                        <li><a href="#">> Pay</a></li>
+                    </ul>
+                </div>
+
+                <!-- Photo Gallery Section -->
+                <div class="footer-section">
+                    <h3>Photo Gallery</h3>
+                    <div class="photo-gallery">
+                        <div class="gallery-item">
+                            <img src="assets/banh1.jpg" alt="Picture">
+                            <span>Picture</span>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="assets/banh2.jpeg" alt="Picture">
+                            <span>Picture</span>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="assets/banh4.jpeg" alt="Picture">
+                            <span>Picture</span>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="assets/banh1.jpg" alt="Picture">
+                            <span>Picture</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <p>&copy; 2024 BBRY. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
