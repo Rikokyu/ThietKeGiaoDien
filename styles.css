@@ -143,6 +143,288 @@ body {
     min-height: 300px;
 }
 
+/* ===== HOME PAGE ===== */
+
+/* HERO BANNER */
+.hero-banner {
+    position: relative;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.hero-background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: white;
+    animation: fadeInUp 0.8s ease;
+}
+
+.hero-content h1 {
+    font-size: 56px;
+    font-weight: 300;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
+
+.read-more-btn {
+    display: inline-block;
+    background-color: #ff9900;
+    color: white;
+    text-decoration: none;
+    padding: 12px 35px;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    font-weight: 600;
+}
+
+.read-more-btn:hover {
+    background-color: #e68900;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 153, 0, 0.4);
+}
+
+/* SLIDER SECTION */
+.slider-section {
+    background-color: white;
+    padding: 40px 0;
+}
+
+.slider-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+.slider-item {
+    height: 150px;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #e8e8e8;
+}
+
+.slider-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.slider-item:hover img {
+    transform: scale(1.05);
+}
+
+/* ABOUT SECTION */
+.about-section {
+    background-color: white;
+    padding: 60px 0;
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.about-image {
+    position: relative;
+    height: 400px;
+}
+
+.about-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    position: relative;
+    z-index: 2;
+}
+
+.shape {
+    position: absolute;
+    background-color: #ff9900;
+    opacity: 0.3;
+}
+
+.shape-1 {
+    width: 100px;
+    height: 100px;
+    top: -20px;
+    left: -20px;
+    border-radius: 8px;
+    z-index: 1;
+}
+
+.shape-2 {
+    width: 120px;
+    height: 120px;
+    bottom: -30px;
+    right: -30px;
+    border-radius: 8px;
+    z-index: 1;
+}
+
+.about-text {
+    padding: 20px;
+}
+
+.section-label {
+    color: #ff9900;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.about-text h2 {
+    font-size: 32px;
+    font-weight: 600;
+    margin: 20px 0;
+    color: #333;
+    line-height: 1.4;
+}
+
+.about-text p {
+    color: #666;
+    margin-bottom: 15px;
+    line-height: 1.7;
+}
+
+/* BEST BAKERY SECTION */
+.best-bakery {
+    background-color: #ff9900;
+    padding: 25px 0;
+    margin: 40px 0;
+}
+
+.best-bakery h2 {
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0;
+}
+
+/* TEAM SECTION */
+.team-section {
+    background-color: white;
+    padding: 60px 0;
+}
+
+.team-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.team-header h2 {
+    font-size: 36px;
+    font-weight: 600;
+    color: #333;
+    line-height: 1.4;
+    margin-top: 15px;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.team-member {
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+    transform: translateY(-5px);
+}
+
+.member-image {
+    position: relative;
+    height: 300px;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.member-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.member-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(157, 107, 79, 0.8));
+    color: white;
+    padding: 30px 15px 15px;
+    text-align: center;
+    transform: translateY(50px);
+    transition: transform 0.3s ease;
+}
+
+.team-member:hover .member-overlay {
+    transform: translateY(0);
+}
+
+.member-overlay span {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.team-member h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+}
+
+/* ANIMATIONS */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 /* FLOATING SOCIAL ICONS */
 .floating-social {
     position: fixed;
@@ -677,6 +959,41 @@ body {
         justify-content: center;
     }
 
+    /* Home page responsive */
+    .hero-banner {
+        height: 350px;
+    }
+
+    .hero-content h1 {
+        font-size: 36px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+
+    .slider-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .about-image {
+        height: 300px;
+    }
+
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .team-header h2 {
+        font-size: 28px;
+    }
+
     /* Product page responsive */
     .banner-content h1 {
         font-size: 40px;
@@ -733,6 +1050,72 @@ body {
         width: 40px;
         height: 40px;
         font-size: 18px;
+    }
+
+    /* Home page responsive */
+    .hero-banner {
+        height: 280px;
+    }
+
+    .hero-content h1 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .hero-content p {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+
+    .read-more-btn {
+        padding: 10px 25px;
+        font-size: 14px;
+    }
+
+    .slider-item {
+        height: 120px;
+    }
+
+    .about-section {
+        padding: 40px 0;
+    }
+
+    .about-image {
+        height: 250px;
+    }
+
+    .about-text h2 {
+        font-size: 24px;
+        margin: 15px 0;
+    }
+
+    .about-text p {
+        font-size: 13px;
+    }
+
+    .best-bakery h2 {
+        font-size: 18px;
+    }
+
+    .team-section {
+        padding: 40px 0;
+    }
+
+    .team-header h2 {
+        font-size: 22px;
+    }
+
+    .team-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .member-image {
+        height: 250px;
+    }
+
+    .team-member h3 {
+        font-size: 16px;
     }
 
     /* Product page responsive */
