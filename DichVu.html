@@ -4,138 +4,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Bakery UI</title>
-
-    <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="DichVu.css">
+    <title>Dịch vụ - BBRY</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
-<body>
+<body class="services-page">
 
-    <section class="banner">
+    <!-- Header Component Placeholder -->
+    <div id="header-placeholder"></div>
 
-        <div class="overlay"></div>
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+        <div class="floating-social">
+            <a href="#" class="float-icon messenger"><i class="fab fa-facebook-messenger"></i></a>
+            <a href="#" class="float-icon zalo"><i class="fas fa-comment"></i></a>
+            <a href="#" class="float-icon whatsapp"><i class="fab fa-whatsapp"></i></a>
+            <a href="#" class="float-icon top"><i class="fas fa-chevron-up"></i></a>
+        </div>
 
-        <div class="banner-content">
+        <section class="service-hero">
+            <div class="service-hero-overlay"></div>
+            <div class="service-hero-content">
+                <h1>
+                    Professional Bakery &amp;
+                    Catering Service
+                </h1>
+                <p>
+                    Dịch vụ bánh ngọt và catering chuyên nghiệp
+                    cho mọi sự kiện của bạn
+                </p>
+                <a href="custom-cake.html" class="read-more-btn" style="display:inline-block;">Đặt Ngay</a>
+            </div>
+            <img class="frog-img" src="assets/GiaoHang.jpg" alt="delivery">
+        </section>
 
-            <h1>
-                Tiệm bánh chuyên nghiệp &
-                Dịch vụ ăn uống
-            </h1>
-
-            <p>
-                Dịch vụ bánh ngọt và catering chuyên nghiệp
-                cho mọi sự kiện của bạn
+        <section class="services-block">
+            <h2>Dịch vụ của chúng tôi</h2>
+            <p class="sub-title">
+                Giải pháp bakery và tiệc trọn gói toàn diện cho mọi dịp
             </p>
-
-            <button>Đặt Ngay</button>
-
-        </div>
-
-    </section>
-
-    <!-- SERVICES -->
-    <section class="services">
-
-        <h2>Dịch vụ của chúng tôi</h2>
-
-        <p class="sub-title">
-            Giải pháp bakery và tiệc trọn gói toàn diện cho mọi dịp
-        </p>
-
-        <div class="card-grid">
-
-            <!-- CARD -->
-            <div class="card">
-
-                <img src="assets/BanhChatLuong.jpg" alt="service">
-
-                <div class="card-content">
-
-                    <h3>Sản phẩm chất lượng</h3>
-
-                    <p>
-                        Chúng tôi cung cấp các loại bánh cao cấp,
-                        đảm bảo chất lượng và hương vị tuyệt hảo.
-                    </p>
-
-                    <a href="#">Tìm hiểu thêm</a>
-
+            <div class="card-grid">
+                <div class="service-card">
+                    <img src="assets/BanhChatLuong.jpg" alt="service">
+                    <div class="card-content">
+                        <h3>Sản phẩm chất lượng</h3>
+                        <p>
+                            Chúng tôi cung cấp các loại bánh cao cấp,
+                            đảm bảo chất lượng và hương vị tuyệt hảo.
+                        </p>
+                        <a href="products.html">Tìm hiểu thêm</a>
+                    </div>
                 </div>
 
-            </div>
-
-            <!-- CARD -->
-            <div class="card">
-
-                <img src="assets/LamBanh.jpg" alt="service">
-
-                <div class="card-content">
-
-                    <h3>Sản phẩm theo yêu cầu</h3>
-
-                    <p>
-                        Thiết kế bánh theo yêu cầu,
-                        phù hợp mọi sự kiện.
-                    </p>
-
-                    <a href="#">Xem chi tiết</a>
-
+                <div class="service-card">
+                    <img src="assets/LamBanh.jpg" alt="service">
+                    <div class="card-content">
+                        <h3>Sản phẩm theo yêu cầu</h3>
+                        <p>
+                            Thiết kế bánh theo yêu cầu,
+                            phù hợp mọi sự kiện.
+                        </p>
+                        <a href="custom-cake.html">Xem chi tiết</a>
+                    </div>
                 </div>
 
-            </div>
-
-            <!-- CARD -->
-            <div class="card">
-
-                <img src="assets/TrucTuyen.jpg" alt="service">
-
-                <div class="card-content">
-
-                    <h3>Đặt hàng trực tuyến</h3>
-
-                    <p>
-                        Đặt bánh nhanh chóng,
-                        dễ dàng và tiện lợi.
-                    </p>
-
-                    <a href="#">Đặt ngay</a>
-
+                <div class="service-card">
+                    <img src="assets/TrucTuyen.jpg" alt="service">
+                    <div class="card-content">
+                        <h3>Đặt hàng trực tuyến</h3>
+                        <p>
+                            Đặt bánh nhanh chóng,
+                            dễ dàng và tiện lợi.
+                        </p>
+                        <a href="products.html">Đặt ngay</a>
+                    </div>
                 </div>
 
-            </div>
-
-            <!-- CARD -->
-            <div class="card">
-
-                <img src="assets/GiaoHang1.jpg" alt="service">
-
-                <div class="card-content">
-
-                    <h3>Giao hàng tận nơi</h3>
-
-                    <p>
-                        Dịch vụ giao hàng nhanh,
-                        đúng thời gian.
-                    </p>
-
-                    <a href="#">Đặt ngay</a>
-
+                <div class="service-card">
+                    <img src="assets/GiaoHang1.jpg" alt="service">
+                    <div class="card-content">
+                        <h3>Giao hàng tận nơi</h3>
+                        <p>
+                            Dịch vụ giao hàng nhanh,
+                            đúng thời gian.
+                        </p>
+                        <a href="GioHang.html">Đặt ngay</a>
+                    </div>
                 </div>
-
             </div>
+        </section>
+    </main>
 
-        </div>
+    <!-- FOOTER -->
+    <!-- Footer Component Placeholder -->
+    <div id="footer-placeholder"></div>
 
-    </section>
+    <!-- Load Components -->
+    <script src="components.js"></script>
 
 </body>
 

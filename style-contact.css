@@ -1,4 +1,13 @@
 /* style-contact.css */
+/* BOLD TEXT USES SERIF FONT */
+h1, h2, h3, h4, h5, h6 {
+  font-family: serif;
+}
+
+strong, b, .bold {
+  font-family: serif;
+}
+
 body { margin: 0; font-family: sans-serif; background: #fff; }
 header { background: #1a1a1a; color: #f39c12; display: flex; justify-content: space-between; align-items: center; padding: 10px 50px; }
 header nav a { color: #fff; text-decoration: none; margin: 0 15px; font-size: 0.8rem; }

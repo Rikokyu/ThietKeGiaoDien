@@ -4,66 +4,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BBRY - Đăng nhập</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Đăng nhập - BBRY</title>
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
 <body>
-
-
-
-    <main class="login-container">
-        <div class="login-image">
-            <img src="assets/banh-image.webp" alt="Smiling Dog">
+    <!-- Header Component Placeholder -->
+    <div id="header-placeholder"></div>
+    <main class="main-content">
+        <div class="floating-social">
+            <a href="#" class="float-icon messenger"><i class="fab fa-facebook-messenger"></i></a>
+            <a href="#" class="float-icon zalo"><i class="fas fa-comment"></i></a>
+            <a href="#" class="float-icon whatsapp"><i class="fab fa-whatsapp"></i></a>
+            <a href="#" class="float-icon top"><i class="fas fa-chevron-up"></i></a>
         </div>
 
-        <div class="login-form-section">
-            <h2>Chào mừng trở lại</h2>
-            <p>Vui lòng đăng nhập để tiếp tục hành trình hương vị cùng chúng tôi.</p>
+        <div class="login-page login-container">
+            <div class="login-image">
+                <img src="assets/banh-image.webp" alt="Bánh BBRY">
+            </div>
 
-            <form>
-                <div class="input-group">
-                    <label>Email</label>
-                    <div class="input-wrapper">
-                        <i class="fa-regular fa-envelope"></i>
-                        <input type="email" placeholder="email@example.com">
+            <div class="login-form-section">
+                <h2>Chào mừng trở lại</h2>
+                <p>Vui lòng đăng nhập để tiếp tục hành trình hương vị cùng chúng tôi.</p>
+
+                <form>
+                    <div class="input-group">
+                        <label>Email</label>
+                        <div class="input-wrapper">
+                            <i class="fa-regular fa-envelope"></i>
+                            <input type="email" placeholder="email@example.com">
+                        </div>
                     </div>
-                </div>
 
-                <div class="input-group">
-                    <div class="label-row">
-                        <label>Mật khẩu</label>
-                        <a href="#" class="forgot-pass">Quên mật khẩu?</a>
+                    <div class="input-group">
+                        <div class="label-row">
+                            <label>Mật khẩu</label>
+                            <a href="#" class="forgot-pass">Quên mật khẩu?</a>
+                        </div>
+                        <div class="input-wrapper">
+                            <i class="fa-solid fa-lock"></i>
+                            <input type="password" placeholder="********">
+                        </div>
                     </div>
-                    <div class="input-wrapper">
-                        <i class="fa-solid fa-lock"></i>
-                        <input type="password" placeholder="********">
+
+                    <div class="remember-me">
+                        <input type="checkbox" id="remember">
+                        <label for="remember">Ghi nhớ đăng nhập</label>
                     </div>
-                </div>
 
-                <div class="remember-me">
-                    <input type="checkbox" id="remember">
-                    <label for="remember">Ghi nhớ đăng nhập</label>
-                </div>
+                    <button type="submit" class="btn-login"><a href="thongtintaikhoan.html">Đăng Nhập</a></button>
 
-                <button type="submit" class="btn-login">Đăng Nhập</button>
+                    <div class="divider">HOẶC ĐĂNG NHẬP VỚI</div>
 
-                <div class="divider">HOẶC ĐĂNG NHẬP VỚI</div>
+                    <div class="social-login">
+                        <button type="button" class="btn-social"><img
+                                src="https://cdn-icons-png.flaticon.com/128/300/300221.png" width="15" alt=""> Google</button>
+                        <button type="button" class="btn-social"><img
+                                src="https://cdn-icons-png.flaticon.com/128/5968/5968764.png" width="15" alt=""> Facebook</button>
+                    </div>
 
-                <div class="social-login">
-                    <button type="button" class="btn-social"><img
-                            src="https://cdn-icons-png.flaticon.com/128/300/300221.png" width="15"> Google</button>
-                    <button type="button" class="btn-social"><img
-                            src="https://cdn-icons-png.flaticon.com/128/5968/5968764.png" width="15"> Facebook</button>
-                </div>
-
-                <p class="signup-link">Chưa có tài khoản? <a href="#">Đăng ký ngay</a></p>
-            </form>
+                    <p class="signup-link">Chưa có tài khoản? <a href="thongtintaikhoan.html">Xem tài khoản mẫu</a></p>
+                </form>
+            </div>
         </div>
     </main>
 
+    <!-- Footer Component Placeholder -->
+    <div id="footer-placeholder"></div>
 
+    <!-- Load Components -->
+    <script src="components.js"></script>
 </body>
 
 </html>

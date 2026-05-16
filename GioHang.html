@@ -3,113 +3,132 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Giỏ hàng của bạn</title>
-    <link rel="stylesheet" href="GioHang.css" />
+    <title>Giỏ hàng - BBRY</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <main class="page-shell">
-        <section class="page-header">
-            <div>
-                <h1>Giỏ hàng của bạn</h1>
-                <p>Những hương vị thủ công đang chờ được thưởng thức.</p>
-            </div>
-        </section>
+    <!-- Header Component Placeholder -->
+    <div id="header-placeholder"></div>
 
-        <section class="cart-grid">
-            <div class="cart-items">
-                <article class="cart-card">
-                    <div class="cart-item-image">
-                        <img src="assets/BanhChatLuong.jpg" alt="Croissant BB Pháp" />
-                    </div>
-                    <div class="cart-item-body">
-                        <div class="item-title">
-                            <div>
-                                <h2>Croissant BB Pháp</h2>
-                                <span class="item-badge">Best Seller</span>
-                            </div>
-                            <button class="btn-icon" aria-label="Xóa sản phẩm">×</button>
-                        </div>
-                        <p class="item-description">Mô tả</p>
-                        <div class="item-meta">
-                            <div class="quantity-box">
-                                <button class="qty-btn">−</button>
-                                <span class="qty-value">02</span>
-                                <button class="qty-btn">+</button>
-                            </div>
-                            <div class="item-price">80.000₫</div>
-                        </div>
-                    </div>
-                </article>
+    <main class="main-content">
+        <div class="floating-social">
+            <a href="#" class="float-icon messenger"><i class="fab fa-facebook-messenger"></i></a>
+            <a href="#" class="float-icon zalo"><i class="fas fa-comment"></i></a>
+            <a href="#" class="float-icon whatsapp"><i class="fab fa-whatsapp"></i></a>
+            <a href="#" class="float-icon top"><i class="fas fa-chevron-up"></i></a>
+        </div>
 
-                <article class="cart-card">
-                    <div class="cart-item-image">
-                        <img src="assets/GiaoHang.jpg" alt="Bánh Mì Men Tự Nhiên" />
-                    </div>
-                    <div class="cart-item-body">
-                        <div class="item-title">
-                            <div>
-                                <h2>Bánh Mì Men Tự Nhiên</h2>
-                                <span class="item-badge">Artisanal</span>
-                            </div>
-                            <button class="btn-icon" aria-label="Xóa sản phẩm">×</button>
-                        </div>
-                        <p class="item-description">Mô tả</p>
-                        <div class="item-meta">
-                            <div class="quantity-box">
-                                <button class="qty-btn">−</button>
-                                <span class="qty-value">01</span>
-                                <button class="qty-btn">+</button>
-                            </div>
-                            <div class="item-price">120.000₫</div>
-                        </div>
-                    </div>
-                </article>
-
-                <a href="#" class="continue-link">← Tiếp tục mua sắm</a>
-            </div>
-
-            <aside class="summary-card">
-                <h2>Tóm tắt đơn hàng</h2>
-                <form class="coupon-form">
-                    <label for="coupon">Mã giảm giá</label>
-                    <div class="coupon-row">
-                        <input id="coupon" type="text" placeholder="Nhập mã tại đây..." />
-                        <button type="button">Áp dụng</button>
-                    </div>
-                </form>
-
-                <div class="summary-line">
-                    <span>Tem tĩnh</span>
-                    <strong>280.000đ</strong>
+        <div class="page-shell">
+            <section class="page-header">
+                <div>
+                    <h1>Giỏ hàng của bạn</h1>
+                    <p>Những hương vị thủ công đang chờ được thưởng thức.</p>
                 </div>
-                <div class="summary-line">
-                    <span>Phí vận chuyển</span>
-                    <strong>30.000đ</strong>
+            </section>
+
+            <section class="cart-grid">
+                <div class="cart-items">
+                    <article class="cart-card">
+                        <div class="cart-item-image">
+                            <img src="assets/BanhChatLuong.jpg" alt="Croissant BB Pháp" />
+                        </div>
+                        <div class="cart-item-body">
+                            <div class="item-title">
+                                <div>
+                                    <h2><a href="ChiTietBanh.html" class="product-title-link">Croissant BB Pháp</a></h2>
+                                    <span class="item-badge">Best Seller</span>
+                                </div>
+                                <button class="btn-icon" type="button" aria-label="Xóa sản phẩm">×</button>
+                            </div>
+                            <p class="item-description">Mô tả</p>
+                            <div class="item-meta">
+                                <div class="quantity-box">
+                                    <button type="button" class="qty-btn">−</button>
+                                    <span class="qty-value">02</span>
+                                    <button type="button" class="qty-btn">+</button>
+                                </div>
+                                <div class="item-price">80.000₫</div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="cart-card">
+                        <div class="cart-item-image">
+                            <img src="assets/GiaoHang.jpg" alt="Bánh Mì Men Tự Nhiên" />
+                        </div>
+                        <div class="cart-item-body">
+                            <div class="item-title">
+                                <div>
+                                    <h2><a href="ChiTietBanh.html" class="product-title-link">Bánh Mì Men Tự Nhiên</a></h2>
+                                    <span class="item-badge">Artisanal</span>
+                                </div>
+                                <button class="btn-icon" type="button" aria-label="Xóa sản phẩm">×</button>
+                            </div>
+                            <p class="item-description">Mô tả</p>
+                            <div class="item-meta">
+                                <div class="quantity-box">
+                                    <button type="button" class="qty-btn">−</button>
+                                    <span class="qty-value">01</span>
+                                    <button type="button" class="qty-btn">+</button>
+                                </div>
+                                <div class="item-price">120.000₫</div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <a href="products.html" class="continue-link">← Tiếp tục mua sắm</a>
                 </div>
 
-                <div class="summary-total">
-                    <span>Tổng cộng</span>
-                    <strong>310.000đ</strong>
-                </div>
+                <aside class="summary-card">
+                    <h2>Tóm tắt đơn hàng</h2>
+                    <form class="coupon-form">
+                        <label for="coupon">Mã giảm giá</label>
+                        <div class="coupon-row">
+                            <input id="coupon" type="text" placeholder="Nhập mã tại đây..." />
+                            <button type="button">Áp dụng</button>
+                        </div>
+                    </form>
 
-                <button class="checkout-btn">Thanh toán ngay</button>
+                    <div class="summary-line">
+                        <span>Tem tĩnh</span>
+                        <strong>280.000đ</strong>
+                    </div>
+                    <div class="summary-line">
+                        <span>Phí vận chuyển</span>
+                        <strong>30.000đ</strong>
+                    </div>
 
-                <div class="card-features">
-                    <div>
-                        <span class="feature-icon">🔒</span>
-                        <p>Bảo mật</p>
+                    <div class="summary-total">
+                        <span>Tổng cộng</span>
+                        <strong>310.000đ</strong>
                     </div>
-                    <div>
-                        <span class="feature-icon">⚡</span>
-                        <p>Giao nhanh</p>
+
+                    <a href="ThanhToan.html" class="checkout-btn">Thanh toán ngay</a>
+
+                    <div class="card-features">
+                        <div>
+                            <span class="feature-icon">🔒</span>
+                            <p>Bảo mật</p>
+                        </div>
+                        <div>
+                            <span class="feature-icon">⚡</span>
+                            <p>Giao nhanh</p>
+                        </div>
+                        <div>
+                            <span class="feature-icon">🌿</span>
+                            <p>Tươi mới</p>
+                        </div>
                     </div>
-                    <div>
-                        <span class="feature-icon">🌿</span>
-                        <p>Tươi mới</p>
-                    </div>
-                </div>
-            </aside>
-        </section>
+                </aside>
+            </section>
+        </div>
     </main>
+
+    <!-- Footer Component Placeholder -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Load Components -->
+    <script src="components.js"></script>
 </body>
 </html>

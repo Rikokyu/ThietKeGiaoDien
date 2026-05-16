@@ -5,61 +5,18 @@
 }
 
 body{
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background:#f5f5f5;
+    font-family:'Poppins', sans-serif;
+    background:#f4f4f4;
     color:#222;
 }
 
-.site-header{
-    position:absolute;
-    top:0;
-    left:0;
-    right:0;
-    z-index:3;
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    padding:25px 8%;
+/* BOLD TEXT USES SERIF FONT */
+h1, h2, h3, h4, h5, h6 {
+    font-family: serif;
 }
 
-.site-header .brand{
-    font-size:24px;
-    font-weight:700;
-    letter-spacing:2px;
-    color:#fff;
-    text-decoration:none;
-}
-
-.site-nav{
-    display:flex;
-    gap:30px;
-}
-
-.site-nav a{
-    color:rgba(255,255,255,0.88);
-    text-decoration:none;
-    font-weight:500;
-    transition:color .2s ease;
-}
-
-.site-nav a:hover{
-    color:#fff;
-}
-
-.nav-button{
-    display:inline-block;
-    padding:12px 28px;
-    border-radius:30px;
-    background:orange;
-    color:#fff;
-    text-decoration:none;
-    font-weight:600;
-    transition:transform .2s ease, background .2s ease;
-}
-
-.nav-button:hover{
-    background:#ff8f1a;
-    transform:translateY(-1px);
+strong, b, .bold {
+    font-family: serif;
 }
 
 /* =========================
@@ -68,18 +25,23 @@ body{
 
 .banner{
     width:100%;
-    min-height:90vh;
+    height:100vh;
+
     position:relative;
+
     background-image:
-    linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
-    url("assets/GiaoHang.jpg");
+    linear-gradient(rgba(0,0,0,0.55),
+    rgba(0,0,0,0.55)),
+    url("GiaoHang.jpg");
+
     background-size:cover;
     background-position:center;
+
     display:flex;
     justify-content:center;
     align-items:center;
+
     overflow:hidden;
-    padding-top:100px;
 }
 
 .overlay{
@@ -90,17 +52,19 @@ body{
 .banner-content{
     position:relative;
     z-index:2;
+
     text-align:center;
     color:white;
-    max-width:720px;
+
+    max-width:700px;
     padding:20px;
 }
 
 .banner-content h1{
     font-size:65px;
     line-height:1.2;
+
     margin-bottom:20px;
-    font-family: serif;
 }
 
 .banner-content p{
@@ -134,17 +98,22 @@ body{
 }
 
 /* Ảnh bên phải */
-.hero-image{
+.frog-img{
     position:absolute;
+
     right:40px;
-    bottom:40px;
-    width:380px;
-    max-width:42%;
-    height:auto;
+    bottom:0;
+
+    width:320px;
+    height:320px;
+
     object-fit:cover;
-    border-radius:24px;
+
+    border-radius:20px;
+
     z-index:2;
-    box-shadow:0 22px 40px rgba(0,0,0,0.28);
+
+    box-shadow:0 10px 25px rgba(0,0,0,0.3);
 }
 
 /* =========================
@@ -152,15 +121,15 @@ body{
 ========================= */
 
 .services{
-    padding:100px 8%;
-    background:#fff;
+    padding:80px 8%;
+    background:white;
 }
 
 .services h2{
     text-align:center;
+
     font-size:45px;
     margin-bottom:15px;
-    font-family: serif;
 }
 
 .sub-title{
@@ -187,10 +156,13 @@ body{
 
 .card{
     background:white;
-    border-radius:20px;
+
+    border-radius:15px;
     overflow:hidden;
-    box-shadow:0 18px 50px rgba(0,0,0,0.06);
-    transition:transform .3s ease, box-shadow .3s ease;
+
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+
+    transition:0.3s;
 }
 
 .card:hover{
@@ -214,8 +186,8 @@ body{
 
 .card-content h3{
     font-size:22px;
+
     margin-bottom:15px;
-    font-family: serif;
 }
 
 .card-content p{
@@ -248,45 +220,29 @@ body{
         font-size:45px;
     }
 
-    .hero-image{
-        width:260px;
+    .frog-img{
+        width:220px;
+        height:220px;
     }
 }
 
 @media(max-width:768px){
 
-    .site-header{
-        flex-wrap:wrap;
-        gap:15px;
-        justify-content:center;
-        padding:20px 5%;
-    }
-
-    .site-nav{
-        flex-wrap:wrap;
-        justify-content:center;
-        gap:16px;
-    }
-
     .banner{
-        min-height:auto;
-        padding:120px 20px 60px;
+        height:auto;
+        padding:100px 20px;
     }
 
     .banner-content h1{
-        font-size:34px;
+        font-size:36px;
     }
 
     .banner-content p{
         font-size:16px;
     }
 
-    .hero-image{
+    .frog-img{
         display:none;
-    }
-
-    .services{
-        padding:70px 5%;
     }
 
     .services h2{

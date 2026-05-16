@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
@@ -12,23 +12,57 @@ body {
     line-height: 1.6;
 }
 
+/* BOLD TEXT USES SERIF FONT */
+h1, h2, h3, h4, h5, h6 {
+    font-family: serif;
+}
+
+strong, b, .bold {
+    font-family: serif;
+}
+
+/* TOPBAR */
+.topbar {
+    background-color: #f5f5f5;
+    padding: 12px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    color: #666;
+}
+
+.topbar-left, .topbar-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.topbar-right a {
+    color: #f3a64b;
+    text-decoration: none;
+    font-size: 14px;
+    margin-left: 5px;
+}
+
 /* SHARED HEADER */
 header {
     background-color: #000;
     color: #f3a64b;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 50px;
 }
 
-.header-container {
+header.header {
+    padding: 0;
+}
+
+header .container {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
+    padding: 15px 20px;
+    width: 100%;
 }
 
 .logo {
@@ -36,24 +70,78 @@ header {
     font-size: 24px;
     font-weight: bold;
     letter-spacing: 2px;
+    text-decoration: none;
 }
 
-nav a {
+.nav {
+    display: flex;
+    gap: 20px;
+    flex: 1;
+    margin-left: 40px;
+}
+
+.nav a {
     color: #fff;
     text-decoration: none;
-    margin: 0 15px;
     font-size: 14px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav a:hover,
+.nav a.active {
+    color: #f3a64b;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-left: auto;
+}
+
+.call-button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.phone-icon {
+    font-size: 20px;
+    color: #f3a64b;
+}
+
+.call-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.call-text {
+    font-size: 12px;
+    color: #ccc;
+}
+
+.phone-number {
+    font-size: 13px;
+    color: #f3a64b;
     font-weight: 500;
 }
 
 .header-icons {
-    color: #f3a64b;
-    font-size: 20px;
+    display: flex;
+    gap: 20px;
 }
 
-.header-icons i {
-    margin-left: 20px;
-    cursor: pointer;
+.icon-link {
+    color: #f3a64b;
+    font-size: 18px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.icon-link:hover {
+    color: #fff;
 }
 
 /* LOGIN PAGE */
@@ -74,7 +162,6 @@ nav a {
 
 .login-form-section {
     flex: 1;
-    font-family: serif;
     padding: 50px 100px;
     display: flex;
     flex-direction: column;
@@ -161,19 +248,92 @@ p {
     margin-top: 20px;
 }
 
+/* FOOTER */
 footer {
     background-color: #000;
     color: #fff;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+}
+
+footer.footer {
     padding: 40px 50px;
-    gap: 20px;
+}
+
+footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
 }
 
 .footer-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.footer-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-section h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.footer-section p {
+    font-size: 13px;
+    line-height: 1.8;
+    color: #ccc;
+    margin-bottom: 8px;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section li {
+    margin-bottom: 10px;
+}
+
+.footer-section a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 13px;
+    transition: color 0.3s;
+}
+
+.footer-section a:hover {
+    color: #f3a64b;
+}
+
+.photo-gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.gallery-item {
+    width: 100%;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.footer-bottom {
+    border-top: 1px solid #333;
+    padding-top: 20px;
+    text-align: center;
+    color: #999;
+    font-size: 12px;
 }
 
 .footer-col h3,
@@ -215,6 +375,13 @@ footer {
     max-width: 1200px;
     margin: 40px auto;
     padding: 0 20px 60px;
+}
+
+/* Override for footer container */
+footer.footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
 }
 
 .page-header h1 {

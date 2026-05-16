@@ -3,105 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chi Tiết Bánh</title>
-    <link rel="stylesheet" href="ChiTietBanh.css">
+    <title>Chi Tiết Bánh - BBRY</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-<body>
-    <div class="page-wrapper">
-        <main class="product-detail">
-            <section class="product-hero">
-                <div class="image-panel">
-                    <div class="image-card">
-                        <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?q=80&w=1000" alt="Bánh kem đẹp">
+<body class="detail-page">
+
+    <!-- Header Component Placeholder -->
+    <div id="header-placeholder"></div>
+
+    <main class="main-content">
+        <div class="floating-social">
+            <a href="#" class="float-icon messenger"><i class="fab fa-facebook-messenger"></i></a>
+            <a href="#" class="float-icon zalo"><i class="fas fa-comment"></i></a>
+            <a href="#" class="float-icon whatsapp"><i class="fab fa-whatsapp"></i></a>
+            <a href="#" class="float-icon top"><i class="fas fa-chevron-up"></i></a>
+        </div>
+
+        <div class="detail-inner">
+            <div class="card-container">
+                <div class="product-detail-layout">
+                    <div class="left-section">
+                        <div class="main-image">
+                            <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?q=80&w=1000" alt="Main Cake Image">
+                        </div>
+                        <div class="thumbnails">
+                            <div class="thumb"><img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?q=80&w=200" alt="Thumb 1"></div>
+                            <div class="thumb"><img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?q=80&w=200" alt="Thumb 2"></div>
+                            <div class="thumb"><img src="https://images.unsplash.com/photo-1530610476181-d83430b64dcd?q=80&w=200" alt="Thumb 3"></div>
+                        </div>
+
+                            <a href="custom-cake.html" class="btn-add-cart" style="text-align:center;display:block;text-decoration:none;line-height:normal;">Chỉnh sửa bánh</a>
+
+                        
                     </div>
-                    <div class="image-thumbs">
-                        <button class="thumb active"><img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?q=80&w=200" alt="Ảnh sản phẩm 1"></button>
-                        <button class="thumb"><img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?q=80&w=200" alt="Ảnh sản phẩm 2"></button>
-                        <button class="thumb"><img src="https://images.unsplash.com/photo-1530610476181-d83430b64dcd?q=80&w=200" alt="Ảnh sản phẩm 3"></button>
+
+                    <div class="right-section">
+                        <div class="detail-title-banner">
+                            TÊN BÁNH
+                        </div>
+
+                        <div class="content-body">
+                            <h2 class="price-title">Giá bánh</h2>
+
+                            <div class="quantity-container">
+                                <h3>Số lượng</h3>
+                                <div class="quantity-controls">
+                                    <button type="button" class="qty-btn">-</button>
+                                    <div class="qty-display">1</div>
+                                    <button type="button" class="qty-btn">+</button>
+                                    <span class="total-text">Thành tiền</span>
+                                </div>
+                            </div>
+
+                            <div class="product-info">
+                                <h2>Thông tin về sản phẩm</h2>
+                                <p>Thưởng thức những lớp bánh bông lan sô cô la đậm đà, nhân kem vani mịn màng và dâu tây tươi. Phủ bên trên là lớp ganache sô cô la thủ công và trang trí bằng dâu tây cao cấp cùng hoa ăn được.</p>
+                                <p>Hương vị:<br>Sô cô la đậm đà với vị dâu tây ngọt ngào</p>
+                                <p>Thành phần:<br>Sô cô la Bỉ cao cấp, dâu tây tươi, trứng hữu cơ, bơ Pháp, hạt vani, kem tươi, bột mì thủ công</p>
+                                <p>Bảo quản:<br>Bảo quản lạnh ở nhiệt độ 2-4°C. Ngon nhất khi dùng trong vòng 3 ngày. Lấy bánh ra khỏi tủ lạnh 30 phút trước khi dùng để có hương vị tốt nhất.</p>
+                            </div>
+
+                            <a href="GioHang.html" class="btn-add-cart" style="text-align:center;display:block;text-decoration:none;line-height:normal;">Thêm vào giỏ hàng</a>
+                        </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </main>
 
-                <div class="info-panel">
-                    <span class="badge">Bánh cao cấp</span>
-                    <h1>Bánh Socola Dâu Thơm Ngọt</h1>
-                    <p class="product-description">Bánh kem socola nhân kem vani và dâu tây tươi, phong cách hiện đại và tinh tế dành cho mọi dịp đặc biệt.</p>
+    <!-- Footer Component Placeholder -->
+    <div id="footer-placeholder"></div>
 
-                    <div class="price-row">
-                        <div class="price-block">
-                            <span class="price-label">Giá</span>
-                            <strong class="price-value">₫590.000</strong>
-                        </div>
-                        <div class="stock-block">
-                            <span class="stock-label">Còn lại</span>
-                            <strong class="stock-value">12 chiếc</strong>
-                        </div>
-                    </div>
-
-                    <div class="rating-row">
-                        <div class="stars">★★★★★</div>
-                        <span class="rating-text">4.9 (256 đánh giá)</span>
-                    </div>
-
-                    <div class="action-group">
-                        <button class="btn btn-primary">Thêm vào giỏ</button>
-                        <button class="btn btn-secondary">Mua ngay</button>
-                    </div>
-
-                    <div class="product-highlights">
-                        <div class="highlight-item">
-                            <span>Hương vị</span>
-                            <p>Chocolate đậm đà, dâu tây tươi, kem vani mịn màng.</p>
-                        </div>
-                        <div class="highlight-item">
-                            <span>Giao hàng</span>
-                            <p>Giao nhanh trong 24h, đảm bảo tươi ngon.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="product-details">
-                <div class="detail-card">
-                    <h2>Thông tin sản phẩm</h2>
-                    <p>Thưởng thức lớp bánh bông lan mềm mịn, nhân kem béo ngậy và lớp phủ chocolate thủ công. Thiết kế thanh lịch, phù hợp cho tiệc sinh nhật và sự kiện.</p>
-                    <ul>
-                        <li>Số lượng: 1 bánh 1.2kg</li>
-                        <li>Thành phần cao cấp: chocolate Bỉ, dâu tây, bơ Pháp, trứng hữu cơ</li>
-                        <li>Bảo quản: 2-4°C, dùng trong vòng 3 ngày</li>
-                    </ul>
-                </div>
-            </section>
-
-            <section class="related-products">
-                <div class="section-header">
-                    <h2>Sản phẩm liên quan</h2>
-                    <p>Khám phá thêm các lựa chọn bánh ngọt được thiết kế tinh tế.</p>
-                </div>
-                <div class="related-grid">
-                    <article class="related-card">
-                        <img src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?q=80&w=400" alt="Bánh vani mềm mịn">
-                        <div>
-                            <h3>Bánh Vani Mềm Mịn</h3>
-                            <span>₫520.000</span>
-                        </div>
-                    </article>
-                    <article class="related-card">
-                        <img src="https://images.unsplash.com/photo-1484723091739-30a097e8f929?q=80&w=400" alt="Bánh dâu ngọt ngào">
-                        <div>
-                            <h3>Bánh Dâu Ngọt Ngào</h3>
-                            <span>₫610.000</span>
-                        </div>
-                    </article>
-                    <article class="related-card">
-                        <img src="assets/socola_den.jpg" alt="Bánh socola đen">
-                        <div>
-                            <h3>Bánh Socola Đen</h3>
-                            <span>₫560.000</span>
-                        </div>
-                    </article>
-                </div>
-            </section>
-        </main>
-    </div>
+    <!-- Load Components -->
+    <script src="components.js"></script>
 </body>
 </html>
